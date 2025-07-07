@@ -1,0 +1,11 @@
+| Command                                      | Description               |
+| -------------------------------------------- | ------------------------- |
+| `trivy image nginx:latest`                   | Scan a local Docker image |
+| `trivy image docker.io/library/nginx:latest` | Scan remote image         |
+| `trivy fs ./myapp`                           | Scan local filesystem     |
+| `trivy sbom --format cyclonedx ./sbom.json`  | Scan an SBOM file         |
+| `trivy image --severity CRITICAL,HIGH nginx` | Scan with severity filter |
+| `trivy image --ignore-unfixed`               | Ignore unfixed CVEs       |
+| `trivy image --scanners secret node`         | Scan for secrets          |
+| `trivy repo https://github.com/user/repo`    | Scan GitHub repository    |
+| `trivy image -f json -o result.json nginx`   | Save output in JSON       |
