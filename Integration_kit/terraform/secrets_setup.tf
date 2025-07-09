@@ -1,0 +1,1 @@
+# Terraform script to configure AWS Secrets Manager and Azure Key Vault
